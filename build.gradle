@@ -1,0 +1,13 @@
+apply plugin: "groovy"
+apply plugin: "application"
+
+mainClassName = 'mep.Scraper'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.7'
+    compile 'net.sourceforge.nekohtml:nekohtml:1.9.22'
+}

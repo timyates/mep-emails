@@ -1,0 +1,6 @@
+*.ipr
+*.iml
+*.csv
+build/
+.idea/
+.gradle/
