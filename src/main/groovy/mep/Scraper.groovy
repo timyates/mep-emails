@@ -15,7 +15,7 @@ class Scraper {
             }
 
         // For each of them, parse the email link, and un-obfuscate it
-        listOfMeps.take(20).indexed().collect { idx, map ->
+        listOfMeps.indexed().collect { idx, map ->
                 if(idx % 20 == 0) println "${idx} of ${listOfMeps.size()}"
 
                 def txt = new URL("http://www.europarl.europa.eu/meps/en/$map.id/home_home.html").text
